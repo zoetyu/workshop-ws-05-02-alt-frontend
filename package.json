@@ -1,0 +1,18 @@
+{
+  "name": "starterpack-sgeller28",
+  "version": "1.0.0",
+  "description": "SA3",
+  "main": "src/index.js",
+  "repository": "https://github.com/dartmouth-cs52-19S/starterpack-sgeller28.git",
+  "author": "Shoshana <Shoshana.M.Geller.20@dartmouth.edu>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
