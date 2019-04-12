@@ -1,6 +1,12 @@
 // change require to es6 import style
 import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './style.scss';
+
+const App = () => <div className="test">All the REACT are belong to us!</div>;
+
+ReactDOM.render(<App />, document.getElementById('main'));
 
 // Used this for reference: https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc
 
