@@ -38,7 +38,6 @@ class Note extends Component {
   }
 
   editNote() {
-    // this.props.editNote(this.props.id);
     this.setState({ isEditing: true });
   }
 
