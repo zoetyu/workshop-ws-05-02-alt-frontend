@@ -10,7 +10,8 @@
                     @delete="onDeleteItem"
                     :key="todo.id" />
         </div>
-        <input type="text" v-model="todo" v-on:keyup.enter="createNewToDoItem"/>
+        <input type="text" :maxlength = "max" v-model="todo" v-on:keyup.enter="createNewToDoItem"/>
+        <div class="input-group-addon" v-text="(max - todo.length)"></div>
         <div class="ToDo-Add" @click="createNewToDoItem()">+</div>
       </div>
     </div>
@@ -39,6 +40,7 @@ export default {
               }
           ],
           todo: '',
+          max: 5,
           logo: Logo
       }
   },
