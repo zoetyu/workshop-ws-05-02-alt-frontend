@@ -1,8 +1,9 @@
 # CS52 Workshops
-: Alternative Front-End
+
+Alternative Front-End
 
 
-![](http://i.giphy.com/eUh8NINbZf9Ys.gif)
+![](https://media.giphy.com/media/EbaEWv3icphQI/giphy.gif)
 
   
 Using frontend libraries and/or frameworks  allows developers to have pre-made components so as to not have to write code from scratch. This also allows for more efficiency, with fewer lines of code. Coders of all levels benefit from frameworks, either by using popular ones such as React, Angular, and Vue, or for more advanced coders to create their own that works best for them.
