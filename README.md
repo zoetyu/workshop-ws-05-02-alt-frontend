@@ -405,9 +405,8 @@ Make sure to answer these questions on Canvas!
 ## Extra Credit
 
 * [ ] Turn in something other than a to-do list -- get creative!
-* [ ] Set up a backend server so that your list is not stored locally
-* [ ] Create this project using angular
-
+* [ ] Style your website so it looks a lot better!
+* [ ] Add a new Vue component
 
 ## Resources
 
