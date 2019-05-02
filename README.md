@@ -1,6 +1,5 @@
 # CS52 Workshops: Alternative Front-End
 
-
 ![](https://i.udemycdn.com/course/750x422/1208638_2604.jpg)
 
   
