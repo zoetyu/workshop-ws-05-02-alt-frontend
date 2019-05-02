@@ -10,7 +10,11 @@
                     @delete="onDeleteItem"
                     :key="todo.id" />
         </div>
-        <input type="text" :maxlength = "max" v-model="todo" v-on:keyup.enter="createNewToDoItem"/>
+        <tinymce id="d1" 
+            :other_options="tinyOptions" 
+            v-model="todo"
+            v-on:keyup.enter="createNewToDoItem"
+    ></tinymce>
         <div class="input-group-addon" v-text="(max - todo.length)"></div>
         <div class="ToDo-Add" @click="createNewToDoItem()">+</div>
       </div>
@@ -21,11 +25,15 @@
 <script>
 import ToDoItem from './components/ToDoItem.vue'
 import Logo from './assets/logo.png';
+import tinymce from 'vue-tinymce-editor';
+
+
 
 export default {
   name: 'to-do',
   components: {
-    ToDoItem
+    ToDoItem,
+    tinymce,
   },
   data() {
       return {
@@ -39,9 +47,12 @@ export default {
                 text: 'buy milk'
               }
           ],
-          todo: '',
+          todo: '<h2 style="color: #339966;">Hi there from TinyMCE for Vue.js.</h2> <p>&nbsp;</p> <p><span>Hey y`all.</span></p>',
           max: 5,
-          logo: Logo
+          logo: Logo,
+          tinyOptions: {
+                    'height': 50
+            },
       }
   },
 

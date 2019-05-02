@@ -1,7 +1,7 @@
 <template>
     <tinymce id="d1" 
             :other_options="tinyOptions" 
-            v-model="editorContent"
+            v-model="todo"
     ></tinymce>
 </template>
 
@@ -15,7 +15,7 @@ export default {
     data() {
         return {
             name: "tiny-mce",
-            editorContent: '<h2 style="color: #339966;">Hi there from TinyMCE for Vue.js.</h2> <p>&nbsp;</p> <p><span>Hey y`all.</span></p>',
+            todo: '<h2 style="color: #339966;">Hi there from TinyMCE for Vue.js.</h2> <p>&nbsp;</p> <p><span>Hey y`all.</span></p>',
             tinyOptions: {
                     'height': 500
             }
