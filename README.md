@@ -1,8 +1,7 @@
-# CS52 Workshops
-: Alternative Front-End
+# CS52 Workshops: Alternative Front-End
 
 
-![](http://i.giphy.com/eUh8NINbZf9Ys.gif)
+![](https://i.udemycdn.com/course/750x422/1208638_2604.jpg)
 
   
 Using frontend libraries and/or frameworks  allows developers to have pre-made components so as to not have to write code from scratch. This also allows for more efficiency, with fewer lines of code. Coders of all levels benefit from frameworks, either by using popular ones such as React, Angular, and Vue, or for more advanced coders to create their own that works best for them.
@@ -92,17 +91,16 @@ Here's what you should have so far:
 
 ```
 <template>
-	  <div id="app">
-		    <div class="ToDo">
-			      <h1 class="ToDo-Header"> Vue Workshop</h1>
-              <div class="ToDo-Container">
-					        <div class="ToDo-Content">  
+  <div id="app">
+    <div class="ToDo">
+    <h1 class="ToDo-Header"> Vue Workshop</h1>
+      <div class="ToDo-Container">
+        <div class="ToDo-Content">  
 
-					        </div>
-				      </div>
-			    </div>
-		</div>
-
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -216,16 +214,16 @@ Inside of .ToDo-Content we are going to add our ToDoItem:
 
   
 
-There is a lot of Vue shorthand going on here!
+There is a lot of Vue shorthand going on here! To explain:
 
 `todo` is our prop we defined in ToDoItem
 
-`v-for` renders a list of items (so we just rendered our list of ToDo). This can almost be thought of as a for loop.
+`v-for` renders a list of items (so we just rendered our list of ToDoItems). This can almost be thought of as a for loop.
 
 `@delete` refers to the name of the function that we just passed up from ToDoItem. See how it's coming together?
   
 
-We need to be able to create new items. Within methods of the `ToDo` file add:
+Next we need to be able to create new items. Within methods of the ToDo file add:
 
   
 
@@ -237,9 +235,9 @@ createNewToDoItem() {
     return
   }
 
-  const  newId = Math.max.apply(null, this.list.map(t  =>  t.id)) + 1;
+  const newId = Math.max.apply(null, this.list.map(t  =>  t.id)) + 1;
 
-  this.list.push({ id:  newId, text:  this.todo});
+  this.list.push({ id:  newId, text:  this.todo });
 
   this.todo = '';
 
@@ -250,7 +248,7 @@ The first `if` statement displays an alert if there is nothing inputted.
 Otherwise, it creates a new id (the next number in the list) and adds it to the list, using `push`.
   
 
-Also we want to be able to delete items. Add this to the methods as well:
+We also need to be able to delete items after we've added them. Add this to ToDo's methods as well:
 
 ```javascript
 onDeleteItem(todo){
@@ -300,6 +298,8 @@ This mounts the ToDo component onto the `app div` in `index.html`
 Now if you look at each `vue` file, you'll see that each contains the HTML, CSS and Javascript associated with it, giving you the Single File Component.
 
 And there you have it!
+
+
 
 ### Part 2: Add an Editor
 
@@ -380,7 +380,7 @@ Hold the phone… the ToDo items don’t keep the styling that the *tinymce* has
 <p class="ToDoItem-Text" v-html="todo.text"></p>
 ```
 
-Now your notes can be edited in the editor AND look electric when added. That’s it! How simple! Thanks Vue!
+Now your notes can be edited in the editor AND look electric when added. That’s it! How simple! Thanks, Vue!
 
 
 ## Summary / What you Learned
@@ -399,13 +399,16 @@ Make sure to answer these questions on Canvas!
 * [ ] Why are frontend frameworks and libraries useful?
 * [ ] How is Vue.js different from React, and what are the pros and cons of using either??
 
+
 ## Extra Credit
 
 * [ ] Turn in something other than a to-do list -- get creative!
 * [ ] Set up a backend server so that your list is not stored locally
 * [ ] Create this project using angular
 
+
 ## Resources
 
+* Vue.js docs: https://vuejs.org/v2/guide/
 * https://github.com/sunil-sandhu/vue-todo 
 * https://vuejsfeed.com/blog/tinymce-editor-component-for-vue-js
