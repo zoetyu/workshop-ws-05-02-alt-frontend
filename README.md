@@ -413,3 +413,4 @@ Make sure to answer these questions on Canvas!
 * Vue.js docs: https://vuejs.org/v2/guide/
 * https://github.com/sunil-sandhu/vue-todo 
 * https://vuejsfeed.com/blog/tinymce-editor-component-for-vue-js
+* https://towardsdatascience.com/what-are-the-pros-and-cons-of-using-vue-js-3689d00d87b0
