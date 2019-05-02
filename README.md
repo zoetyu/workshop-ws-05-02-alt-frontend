@@ -385,9 +385,16 @@ Now your notes can be edited in the editor AND look electric when added. That’
 
 ## Summary / What you Learned
 
-* [ ] can be checkboxes
+* [ ] A new front-end framework!
+* [ ] Why frontend frameworks and libraries are awesome, and which are the most popular: angular, react, vue, backbone, ember
+* [ ] How to set up a project using Vue
+* [ ] How to add an editor to your project
+* [ ] Better understanding of what exactly React does
+
 
 ## Reflection
+
+Make sure to answer these questions on Canvas!
 
 * [ ] How is Vue.js different from React?
 
