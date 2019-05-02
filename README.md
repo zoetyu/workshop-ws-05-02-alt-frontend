@@ -396,9 +396,8 @@ Now your notes can be edited in the editor AND look electric when added. That’
 
 Make sure to answer these questions on Canvas!
 
-* [ ] How is Vue.js different from React?
-
-* [ ] What are the pros and cons of using Vue.js vs. Angular2 for React?
+* [ ] Why are frontend frameworks and libraries useful?
+* [ ] How is Vue.js different from React, and what are the pros and cons of using either??
 
 ## Extra Credit
 
