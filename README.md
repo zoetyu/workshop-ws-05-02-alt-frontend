@@ -43,8 +43,8 @@ Well what if you could have all of that in one file?
 
 In this workshop we'll primarily be working in 2 files:
 
-* src/ToDo.vue
-* src/components/ToDoItem.vue
+* `src/ToDo.vue`
+* `src/components/ToDoItem.vue`
 
 These .vue files will contain all of the HTML, CSS, and JavaScript code in a Single File Component. Wow!
 
@@ -69,7 +69,7 @@ Start with a template and script tags above the style tags.
 
 Tip! If you're making comments inside the `<template>` tags, the comment is HTML-style and inside the `<script>` tags is JavaScript-style.
 
-` <!--This is a HTML comment!--> `
+` <!--This is an HTML comment!--> `
 
 ` /* This is a JavaScript comment! */ `
 
@@ -77,15 +77,15 @@ Tip! If you're making comments inside the `<template>` tags, the comment is HTML
 We'll start off with a basic HTML structure.
 
 
-Create a div with the id "app."
+Create a div with the id `"app"`.
 
-Nested inside of #app create a div with the class "ToDo".
+Nested inside of `#app` create a div with the class `"ToDo"`.
 
-Nested inside .ToDo put a header tag with a title for your To Do List and the Vue logo. Make sure to import it as well.
+Nested inside `.ToDo` put a header tag with a title for your To Do List and the Vue logo. Make sure to import it as well.
 
-Beneath the header put a div with the class "ToDo-Container".
+Beneath the header put a div with the class `"ToDo-Container"`.
 
-Nested inside of .ToDo-Container put a div with the class with the title "ToDo-Content".
+Nested inside of `.ToDo-Container` put a div with the class with the title `"ToDo-Content"`.
 
 
 Here's what you should have so far:
@@ -118,7 +118,7 @@ Now onto the interesting stuff!
 
   
 
-Open ToDoItem.vue in your src/components folder, and add the following to it.
+Open `ToDoItem.vue` in your `src/components` folder, and add the following to it.
 
 ```html
 <template>
@@ -151,7 +151,7 @@ methods: {
 ```
 Here `delete` is the name of the function that will get passed back up to ToDo. `$emit` triggers an event that also links with ToDo.
 
-Let's go back to ToDo. We'll start by importing ToDoItem in the script tags.
+Let's go back to `ToDo`. We'll start by importing `ToDoItem` in the script tags.
 
 ```javascript
 import ToDoItem from './components/ToDoItem.vue'
@@ -201,7 +201,7 @@ todo: '',
   
   
 
-Inside of your .ToDo-Content div, we are going to add our ToDoItem:
+Inside of your `.ToDo-Content` div, we are going to add our `ToDoItem`:
 
   
 
@@ -222,7 +222,7 @@ There is a lot of Vue shorthand going on here! To explain:
 
 `v-for` renders a list of items (so we just rendered our list of ToDoItems). This can almost be thought of as a for loop.
 
-`@delete` refers to the name of the function that we just passed up from ToDoItem. See how it's coming together?
+`@delete` refers to the name of the function that we just passed up from `ToDoItem`. See how it's coming together?
   
 
 Next we need to be able to create new items. Within methods of the ToDo file add:
@@ -250,7 +250,7 @@ The first `if` statement displays an alert if there is nothing inputted.
 Otherwise, it creates a new id (the next number in the list) and adds it to the list, using `push`.
   
 
-We also need to be able to delete items after we've added them. Add this to ToDo's methods as well:
+We also need to be able to delete items after we've added them. Add this to `ToDo`'s methods as well:
 
 ```javascript
 onDeleteItem(todo){
@@ -264,7 +264,7 @@ The `filter` tag simply resets the list to be everything in it that isn't the `t
   
   
 
-Finally add an input text bar under your ToDoItem in HTML to type your to do items and a button to submit them:
+Finally add an input text bar under your `ToDoItem` in HTML to type your to do items and a button to submit them:
 
 ```html
 <input type="text" v-model="todo"  v-on:keyup.enter="createNewToDoItem"/>
