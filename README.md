@@ -400,7 +400,11 @@ Make sure to answer these questions on Canvas!
 
 * [ ] What are the pros and cons of using Vue.js vs. Angular2 for React?
 
+## Extra Credit
 
+* [ ] Turn in something other than a to-do list -- get creative!
+* [ ] Set up a backend server so that your list is not stored locally
+* [ ] Create this project using angular
 
 ## Resources
 
