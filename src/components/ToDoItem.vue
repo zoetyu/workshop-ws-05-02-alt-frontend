@@ -1,6 +1,6 @@
 <template>
     <div class="ToDoItem">
-        <p class="ToDoItem-Text">{{todo.text}}</p>
+        <p class="ToDoItem-Text" v-html="todo.text"></p>
         <div class="ToDoItem-Delete"
              @click="deleteItem(todo)">-
         </div>

@@ -2,7 +2,7 @@
   <div id="app">
     <div class="ToDo">
       <img class="Logo" :src="logo" alt="Vue logo"/>
-      <h1 class="ToDo-Header">Vue To Do</h1>
+      <h1 class="ToDo-Header">Vue Workshop</h1>
       <div class="ToDo-Container">
         <div class="ToDo-Content">
           <ToDoItem v-for="todo in list" 
@@ -15,7 +15,6 @@
             v-model="todo"
             v-on:keyup.enter="createNewToDoItem"
     ></tinymce>
-        <div class="input-group-addon" v-text="(max - todo.length)"></div>
         <div class="ToDo-Add" @click="createNewToDoItem()">+</div>
       </div>
     </div>
@@ -40,18 +39,21 @@ export default {
           list: [
               {
                 id: 1,
-                text: 'clean the house'
+                text: 'Stretch Break'
               },
               {
                 id: 2,
-                text: 'buy milk'
+                text: 'Wait 15 minutes'
+              },
+              {
+                id: 3,
+                text: 'Stretch Break(again)'
               }
           ],
-          todo: '<h2 style="color: #339966;">Hi there from TinyMCE for Vue.js.</h2> <p>&nbsp;</p> <p><span>Hey y`all.</span></p>',
-          max: 5,
+          todo: '',
           logo: Logo,
           tinyOptions: {
-                    'height': 50
+                    'height': 200
             },
       }
   },
