@@ -94,7 +94,7 @@ Here's what you should have so far:
 <template>
 	  <div id="app">
 		    <div class="ToDo">
-			      <h1 class="ToDo-Header">A To Do List In Vue!</h1>
+			      <h1 class="ToDo-Header"> Vue Workshop</h1>
               <div class="ToDo-Container">
 					        <div class="ToDo-Content">  
 
@@ -135,6 +135,7 @@ This once again should look familiar as it is just simple `html`. `@click` is ju
   export  default  {
   name: "to-do-item",
     props: ['todo'],
+  }
 </script>
 ```
 
@@ -159,11 +160,11 @@ export default {
   name:  'to-do',
   components: {
     ToDoItem
-  }
-},
+  },
+}
 ```
 
-Beneath export default add:
+Beneath components add:
 ```javascript
 data() {
   return {
@@ -224,7 +225,7 @@ There is a lot of Vue shorthand going on here!
 `@delete` refers to the name of the function that we just passed up from ToDoItem. See how it's coming together?
   
 
-We need to be able to create new items:
+We need to be able to create new items. Within methods of the `ToDo` file add:
 
   
 
@@ -249,7 +250,7 @@ The first `if` statement displays an alert if there is nothing inputted.
 Otherwise, it creates a new id (the next number in the list) and adds it to the list, using `push`.
   
 
-Also we want to be able to delete items:
+Also we want to be able to delete items. Add this to the methods as well:
 
 ```javascript
 onDeleteItem(todo){
@@ -263,7 +264,7 @@ The `filter` tag simply resets the list to be everything in it that isn't the `t
   
   
 
-Finally add an input text bar to type your to do items and a button to submit them:
+Finally add an input text bar under your ToDoItem in HTML to type your to do items and a button to submit them:
 
 ```html
 <input type="text" v-model="todo"  v-on:keyup.enter="createNewToDoItem"/>
@@ -322,7 +323,7 @@ import tinymce from 'vue-tinymce-editor';
 You’ll also need to list it as a component being used.
 
 ```javascript
-components {
+components: {
   ToDoItem,
   tinymce,
 },
@@ -364,13 +365,16 @@ data() {
                    'height': 200
            },
      }
+},
 ```
 
 Whoa! We have a fancy new editor now instead of the plain ol’ input tag. You should be able to add and delete different ToDo items with the new editor. 
 
-Run `yarn start` to see what it looks like.
+Run `yarn start` to see what it looks like. 
 
-Hold the phone… the ToDo items don’t keep the styling that the *tinymce* has. Well, don’t fret, Vue has a special attribute for this: `v-html`. Remove the inner html and add this property to the `<p>` tag in `ToDoItem.vue`.
+Now try and add a new note.
+
+Hold the phone… the ToDo items don’t keep the styling that the *tinymce* has and adds HTML tags on the end instead. Well, don’t fret, Vue has a special attribute for this: `v-html`. Remove the inner html and add this property to the `<p>` tag in `ToDoItem.vue`.
 
 ```html
 <p class="ToDoItem-Text" v-html="todo.text"></p>
