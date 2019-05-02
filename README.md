@@ -26,6 +26,8 @@ To run locally at any point, simply do:
 
     yarn start
 
+After calling yarn start, you shouldn't see anything just yet!
+
 Tip! Use the Vue extension for VS Code: [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). It may pop up as an optional extension
 
 
@@ -118,7 +120,7 @@ Now onto the interesting stuff!
 
   
 
-Open ToDoItem.vue and add the following to it.
+Open ToDoItem.vue in your src/components folder, and add the following to it.
 
 ```html
 <template>
@@ -201,7 +203,7 @@ todo: '',
   
   
 
-Inside of .ToDo-Content we are going to add our ToDoItem:
+Inside of your .ToDo-Content div, we are going to add our ToDoItem:
 
   
 
