@@ -33,11 +33,11 @@ Here's a resource for [github markdown](https://guides.github.com/features/maste
 ### Part 2: Add an Editor
 
 At this point you should have a basic application which can add and delete todo items. 
-![img of progress here](“./img/part1_done.png”)
+![img of progress here](./img/part1_done.png)
 
 But, what if we had an editor to make our notes pretty?
 
-![img of editor here](“./img/tinymce.png”)
+![img of editor here](./img/tinymce.png)
 
 First, install the *tinymce* editor.
 
