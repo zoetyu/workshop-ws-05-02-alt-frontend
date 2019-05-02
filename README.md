@@ -124,7 +124,8 @@ Open `ToDoItem.vue` in your `src/components` folder, and add the following to it
 <template>
   <div  class="ToDoItem">
     <p class="ToDoItem-Text">{{todo.text}}</p>
-    <div class="ToDoItem-Delete" @click="deleteItem(todo)"/>
+    <div class="ToDoItem-Delete" @click="deleteItem(todo)">-
+	</div>
   </div>
 </template>
 ```
