@@ -81,7 +81,7 @@ Create a div with the id "app."
 
 Nested inside of #app create a div with the class "ToDo".
 
-Nested inside .ToDo put a header tag with a title for your To Do List.
+Nested inside .ToDo put a header tag with a title for your To Do List and the Vue logo. Make sure to import it as well.
 
 Beneath the header put a div with the class "ToDo-Container".
 
@@ -94,6 +94,7 @@ Here's what you should have so far:
 <template>
   <div id="app">
     <div class="ToDo">
+    <img class="Logo" :src="logo" alt="Vue logo"/>
     <h1 class="ToDo-Header"> Vue Workshop</h1>
       <div class="ToDo-Container">
         <div class="ToDo-Content">  
@@ -105,7 +106,7 @@ Here's what you should have so far:
 </template>
 
 <script>
-
+import Logo from './assets/logo.png'
 </script>
 ```
 
